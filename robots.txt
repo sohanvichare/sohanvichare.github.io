@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: 
+Disallow: /CNAME
+
+Sitemap: http://sovicx.com/sitemap
+
