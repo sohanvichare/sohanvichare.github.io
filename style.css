@@ -22,10 +22,6 @@ html {
   font-size: 4em;
 }
 
-.med
-{
-  font-size:2em;
-}
 
 .unselectable {
     -webkit-touch-callout: none;
@@ -36,10 +32,6 @@ html {
     user-select: none;
 }
 
-.shareImages:hover
-{
-  background-color:#0097a7;
-}
 
 .hoverText:hover
 {
@@ -87,4 +79,8 @@ html {
 .smllmg
 {
   height: 14em;
+}
+
+#med {
+  height: 4.2em;
 }
