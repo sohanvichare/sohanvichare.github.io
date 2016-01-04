@@ -23,7 +23,7 @@ $( document ).ready(function(){
 
   $(function(){
       $(".element").typed({
-        strings: ["California Young Arts Scholar.", "iOS developer.", "hacker.", "artist.", "podcast host.", "robotics team captain.", "web designer.", "high school student.", "thespian.", "avid blogger.", "iOS designer.", "machine-learning enthusiast.", "award-winning debater.", "theater geek.", "award-winning speaker.", "team player."],
+        strings: ["California Arts Scholar.", "iOS developer.", "drone enthusiast.", "artist.", "robotics team captain.", "web designer.", "high school student.", "thespian.", "avid blogger.", "iOS designer.", "machine-learning enthusiast.", "award-winning debater.", "theater geek.", "award-winning speaker.", "team player."],
         typeSpeed: 0,
         loop: true
       });
