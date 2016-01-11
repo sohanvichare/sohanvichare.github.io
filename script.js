@@ -5,6 +5,30 @@ $( document ).ready(function(){
     }
   );
 
+  $('#res').qtip({
+    content: {
+        text: 'View Resume'
+    },
+    events: {
+        render: function(event, api) {
+            // Grab the tip element
+            var elem = api.elements.tip;
+        }
+    }
+})
+
+$('#cv').qtip({
+    content: {
+        text: 'View Curriculum Vitae'
+    },
+    events: {
+        render: function(event, api) {
+            // Grab the tip element
+            var elem = api.elements.tip;
+        }
+    }
+})
+
   $('.med').click(function(){
     window.open("https://www.medium.com/@sohanvichare", '_blank')
   });
