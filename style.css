@@ -25,6 +25,10 @@ html {
    font-family: 'Open Sans', sans-serif;
  }
 
+ #titleTxt {
+  font-size: 25px;
+ }
+
 .center
 {
   text-align: center;
