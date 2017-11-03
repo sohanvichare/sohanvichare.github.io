@@ -36,7 +36,7 @@
     <div class="nav-wrapper white z-depth-0">
       <div class="container z-depth-0">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#projects" data-scroll class="red-text text-accent-2">Projects</a></li>
+        <li><a href="#projects" data-scroll class="red-text text-accent-2">Research + Projects</a></li>
         <li><a href="#organizations" data-scroll class="blue-text">Organizations</a></li>
         <li><a href="#skills" data-scroll class="orange-text">Skills</a></li>
         <li><a href="#theater" data-scroll class="green-text">Theater</a></li>
@@ -58,8 +58,8 @@
 
   <div id="" class="container">
     <div class="row">
-      <div class="col s12">
-        <h4 class="flow-text grey-text text-darken-3 center" id="titleTxt"> Sohan Vichare </h4>
+      <div class="col s5">
+        <h4 class="flow-text grey-text text-darken-3" id="titleTxt"> Hi. I'm <strong>Sohan Vichare</strong>.</h4>
       </div>
     </div>
     <div class="row">
@@ -84,27 +84,100 @@
   </div>
 
 
-  <div class="container"><div class="divider col s12"></div></div>
-
   <div id="projects" class="container">
 
-    <div class="col s12">
-      <h3 class="red-text"> Projects </h3>
+    <div class="col s12 ">
+      <h3 class="red-text mT"><strong> Research + Projects </strong> </h3>
     </div>
+
 
     <div class="row">
       <div class="col s12">
-        <h3 class=""> Autonomously Controlled Drones </h3>
-        <p class="flow-text"><strong class="lime-text text-darken-2">A Novel Approach of Using Intelligent Drones to Assist Rescue Missions Through the use of Pathfinding and Person Recognition.</strong> A 2016 Synopsis Science Fair Project that hopes to use autonomously controlled drones to aid rescue missions by both spotting people using an inbuilt camera and guiding these people to safety through rough terrain.</p>
+        <h3 class="sT"> <strong> <a href=""> Autonomously Controlled Drones </strong></a> </h3>
+      </div>
+       <div class="col s8">
+        <span class="sT"><span class="lime-text text-darken-2">4th Place in CS at the CSSF | 1st in Mech E at Synopsys </span> <p class="rs">The use of drones in search and rescue missions holds much promise. As of now, various government agencies are using drones to assist in search and rescue missions. However, we noticed one thing about drones being used in search and rescue missions - they are all controlled by people. We strongly believe that autonomously controlled drones, that is, drones that can control themselves, can make search and rescue missions that currently require massive amounts of manpower due to their sheer size much more efficient.
+</p>
+        <p class="rs">
+          <strong>Person Recognition</strong>: Self-trained SVM classifier. Utilized OpenCV HOG methods.
+          <strong>Pathfinding</strong>: Implementation of the D* Lite pathfinding algorithm to to dynamically find the shortest path between the drone and the safe “goal” location while avoiding obstacles to the person. Due to its grid based processing, the algorithm worked perfectly after we modified its “world” to be a grid of latitude and longitudinal points. 
+          <strong>Drone flight stack</strong>: Raspberry Pi -> Pixhawk -> motors. Higher level code in Python. Leveraged <a href="dronekit.io"> dronekit.io.</a>
+        </p>
+
+         </span>
+      </div>
+      <div class="col s3">
+        <iframe width="420" height="315"
+src="https://www.youtube.com/embed/kbVJhgpzTEo">
+</iframe>
       </div>
     </div>
 
-    <div class="row">
+
+     <div class="row">
       <div class="col s12">
-        <h3 class=""> Immigration Researcher for Congressman Mike Honda </h3>
-        <p class="flow-text"> <strong class="light-blue-text text-darken-1"> As an Immigration Researcher in Congressional Representative Mike Honda's Student Advisory Council, I am working on compiling a detailed report highlighting prominent issues in the context of immigration. </strong> I am working on presenting this report to the Congressman, along with a call to action. In addition to this, I volunteered with Congressman Honda throughout the year. </p>
+        <h3 class="sT"> <strong> <a href="https://devpost.com/software/dermyx"> Dermyx </strong></a> </h3>
+      </div>
+       <div class="col s8">
+        <span class="sT"><span class="lime-text text-darken-2">Winner at Stanford Health++</span> <p class="rs">About 232,000 new cases of melanoma are diagnosed worldwide each year, according to the World Health Organization. Melanoma is a type of skin cancer which arises due to in pigment cells called melanocytes [2]. Skin Cancer is the most prevalent cancer in the United States, impacting an astonishing 1 out of every 5 individuals in the nation [1]. Although Melanoma is not the most common type of skin cancer, it causes a large majority of skin cancer deaths [3], projected to cause over 10,000 deaths in America alone in the 2016 calendar year [1]. Detection of the cancer at its early stages can be vital to preventing the exacerbation of the health issue. Therefore, creating a tool for the rapid detection of melanoma - from a smartphone - can have an immensely positive impact.</p>
+        <p class="rs">
+          To build Dermyx, we leveraged IBM Watson along with a dataset of images webscraped from the International Skin Imaging Collaboration (https://isic-archive.com/#images). This was paired with computer vision to isolate the part of the arm and to edit the histogram of the image to optimize it for analysis. An iOS app was built to deliver the tech.
+        </p>
+
+         </span>
+      </div>
+      <div class="col s3">
+        <img class="materialboxed" width="200" src="d1.jpg"> </img>
       </div>
     </div>
+
+
+    <div class="row">
+      <div class="col s12">
+        <h3 class="sT"> <strong> <a href="http://www.hackathon.io/sentry2"> Sentry </strong></a> </h3>
+      </div>
+       <div class="col s8">
+        <span class="sT"><span class="lime-text text-darken-2"> Winner at Angelhack </span> <p class="rs"> Sentry is an app that finds, identifies, and tracks armed militants through crowdsourcing. Through the iOS App, citizens can point their camera at armed militants and tap the screen to report them. To prevent people from reporting falsely, the images are analyzed to look for people and firearms (neural network analysis). Also, they can access militant data to know if they are in a high danger area. Finally, they can access a pathfinding tool to find the safest walking/driving path from their current location to another. The pathfinding algorithm avoids high-danger areas (areas with high concentrations of militants) within reasonable bounds. Militants are tracked from multiple phones through an implementation of SSIM tracking.
+</p>
+         </span>
+      </div>
+      <div class="col s3">
+        <iframe width="420" height="315"
+src="https://www.youtube.com/embed/SQ4_gydxXgA">
+</iframe>
+      </div>
+    </div> 
+
+    <div class="row">
+      <div class="col s12">
+        <h3 class="sT"> <strong> <a href="https://devpost.com/software/dermyx"> InformAR </strong></a> </h3>
+      </div>
+       <div class="col s8">
+        <span class="sT"><span class="lime-text text-darken-2"></span> <p class="rs">InformAR uses augmented reality to display information about various locations in your area. This means that you can point your camera at any building near you and instantly get information about it, superimposed in 3D space on the building. Simply tap on any location you see to get an Uber ride there.
+
+In addition to this, InformAR can recognize objects and instantly display information about them. This means that you can point your camera at any object and tap on it to instantly gain information about it.*
+
+Finally, we realized that object recognition had the ability to help the visually impaired, so InformAR can read out what it sees to help tell people who are visually impaired what's around them.</p>
+        
+
+         </span>
+      </div>
+      <div class="col s3">
+        <iframe width="420" height="315"
+src="https://www.youtube.com/embed/33ZtNJvzGXo">
+</iframe>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  
+
 
     <div class="row">
       <div class="col s12 col m4">

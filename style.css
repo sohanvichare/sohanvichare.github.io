@@ -77,6 +77,18 @@ html {
     100% { opacity:1; }
 }
 
+.mT {
+  font-size: 30px;
+}
+
+.rs {
+  font-size: 15px;
+}
+
+.sT {
+  font-size: 25px;
+}
+
 #titleImg
 {
   width:50px;
@@ -84,9 +96,9 @@ html {
   margin-top: 10px;
 }
 
-#titleTxt
+.titleTxt
 {
-  font-size: 4em;
+  font-size: 35px;
 }
 
 .smll {
