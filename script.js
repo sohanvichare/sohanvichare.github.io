@@ -5,6 +5,8 @@ $( document ).ready(function(){
     }
   );
 
+   $('.slider').slider();
+
   $('#res').qtip({
     content: {
         text: 'View Resume'

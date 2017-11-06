@@ -29,6 +29,10 @@ html {
   font-size: 25px;
  }
 
+ #drowsy {
+  background-color: white;
+ }
+
 .center
 {
   text-align: center;
