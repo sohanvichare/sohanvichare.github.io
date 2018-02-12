@@ -95,6 +95,28 @@
 
     <div class="row">
       <div class="col s12">
+        <h3 class="sT"> <strong> <a href=""> Multi-Track Music Generation with Recurrent Neural Networks </strong></a> </h3>
+      </div>
+       <div class="col s8">
+        <span class="sT"><span class="lime-text text-darken-2">Passion Project</span> <p class="rs"></p>
+        <p class="rs">
+          <strong> Why?</strong> I'm interested in the intersection of neural networks and creativity (text generation, music generation). Current music generation code (NeuralBeats, JazzML) that do not analyze waveforms all decode single-track MIDI files and output single-track MIDI files. This means they can predict the next note or chord, but cannot generate music with multiple tracks, or multiple instruments.
+        </p><p class="rs">
+          <strong> Approach:</strong> First, the multi-track midi file was parsed using music21 (http://web.mit.edu/music21/) and quantized. Then, instruments were put into four classes, loosely resembling [beat, instrument wind, instrument string, other], and this was put in text format, with each note/chord being mapped to a character. Then, a text-generation recurrent neural network built using Keras was trained on this data and used to generate new music.
+          </p><p class="rs">
+          <strong> Work in progress. </strong> <a href="github.com/sohanvichare"> Check out the code on github. </a>
+        </p>
+
+         </span>
+      </div>
+      <div class="col s3">
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
         <h3 class="sT"> <strong> <a href=""> NASA DELIVER: Autonomous Search and Track </strong></a> </h3>
       </div>
        <div class="col s8">
@@ -123,7 +145,7 @@ src="https://www.youtube.com/embed/nu0WO7Pk3qw">
 </p>
         <p class="rs">
           <strong>Person Recognition</strong>: Self-trained SVM classifier. Utilized OpenCV HOG methods.
-          <strong>Pathfinding</strong>: Implementation of the D* Lite pathfinding algorithm to to dynamically find the shortest path between the drone and the safe “goal” location while avoiding obstacles to the person. Due to its grid based processing, the algorithm worked perfectly after we modified its “world” to be a grid of latitude and longitudinal points. 
+          <strong>Pathfinding</strong>: Implementation of the D* Lite pathfinding algorithm to to dynamically find the shortest path between the drone and the safe “goal” location while avoiding obstacles to the person. Due to its grid based processing, the algorithm worked perfectly after we modified its “world” to be a grid of latitude and longitudinal points.
           <strong>Drone flight stack</strong>: Raspberry Pi -> Pixhawk -> motors. Higher level code in Python. Leveraged <a href="dronekit.io"> dronekit.io.</a>
         </p>
 
@@ -145,7 +167,7 @@ src="https://www.youtube.com/embed/kbVJhgpzTEo">
        <div class="col s8">
         <span class="sT"><span class="lime-text text-darken-2">Winner at HSHacks III</span> <p class="rs">Modernizing healthcare. View all patient data online, and run machine-learning driven tests on the data to gain probable diagnoses. Example coded: Heart Disease. Furthermore, access symptomatic treatment over SMS (for rural areas without WiFi). Built with Swift for iOS, Twilio, and Keras + Python.</p>
         <p class="rs">
-         
+
         </p>
 
          </span>
@@ -189,7 +211,7 @@ src="https://www.youtube.com/embed/kbVJhgpzTEo">
 src="https://www.youtube.com/embed/SQ4_gydxXgA">
 </iframe>
       </div>
-    </div> 
+    </div>
 
     <div class="row">
       <div class="col s12">
@@ -204,7 +226,7 @@ In addition to this, InformAR can recognize objects and instantly display inform
 <strong> Software stack </strong> Swift for iOS. ImageNET in Keras + Python for image analysis. Google Places API for location data.
 
 </p>
-        
+
 
          </span>
       </div>
@@ -222,7 +244,7 @@ src="https://www.youtube.com/embed/33ZtNJvzGXo">
 
 
 
-  
+
 
 
     <div class="row">
@@ -240,7 +262,7 @@ src="https://www.youtube.com/embed/33ZtNJvzGXo">
         <p class="flow-text"> <a href="http://devpost.com/software/ladder-xcpubz" class="green-text text-accent-2"> Check it out. </a></p>
           <p class="flow-text"> <a href="https://github.com/sohanvichare/Ladder" class="green-text text-accent-2"> Or go to the github repo. </a></p>
       </div>
-      
+
       </div>
     </div>
 
@@ -265,7 +287,7 @@ src="https://www.youtube.com/embed/33ZtNJvzGXo">
     <div class="slider">
     <ul class="slides">
       <li>
-        <img src="drama1.jpg"> 
+        <img src="drama1.jpg">
         <div class="caption center-align">
           <h3></h3>
           <h5 class="light grey-text text-lighten-3">Performing a scene from Arthur Miller's After the Fall. Gold Award / Command Performance Winner @ Lenaea Theater Festival in 2017.</h5>
@@ -300,7 +322,7 @@ src="https://www.youtube.com/embed/33ZtNJvzGXo">
     <div class="slider">
     <ul class="slides">
       <li>
-        <img src="debate1.jpg"> 
+        <img src="debate1.jpg">
         <div class="caption center-align">
           <h3></h3>
           <h5 class="light grey-text text-lighten-3">Competed in World Schools Debate and Extemporaneous Debate at Nationals in Birmingham, Alabama. Won 6th Place nationally for Extemporaneous Debate.</h5>
@@ -440,7 +462,7 @@ src="https://www.youtube.com/embed/33ZtNJvzGXo">
         <div class="col s5"> <img src="kiteRunner.jpg" class="responsive-img wow fadeIn"><p> Me and the cast of CAT's (Cupertino Actors Theater) production of Kite Runner in 2015. I played the role of Amir. </p></div>
       </div>
     </div>
-  </div> 
+  </div>
 
 <div class="container center">
   <a data-scroll href="#top" class="waves-effect waves-light btn red white-text z-depth-0">to top</a>
