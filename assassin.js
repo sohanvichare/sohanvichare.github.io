@@ -26,6 +26,7 @@ var f = false;
 		object = $("#objectInput").val()
 
 
+		 
 		var starCountRef = firebase.database().ref('game/');
 			starCountRef.on('value', function(snapshot) {
 

@@ -26,36 +26,18 @@ $(function() {
 			    names.push(key);
 			    objects.push(snapshot.val()[key].object);
 			}
-			var counts = {};
-			objects.forEach(function(x) { counts[x] = (counts[x] || 0)+1; });
-
-			for (var key in counts) {
-				if (counts[key] > 1) {
-					alert("Infinte loop because two of same object")
-				}
-			}
+			
 			console.log("here")
 
 
-		 new_obj = objects.reverse()
+		 new_obj = shuffle(objects)
 
-		 if (new_obj.length % 2 != 0) {
-			 var t = new_obj[Math.floor(new_obj.length/2)]
-			 new_obj[Math.floor(new_obj.length/2)] = new_obj[0]
-			 new_obj[0] = t
-		 }
-
-		 var foo = [];
+	var foo = [];
 
 		for (var i = 1; i <= names.length; i++) {
 			  foo.push(i);
 		}
-		foo = foo.reverse()
-		if (foo.length % 2 != 0) {
-			var t = foo[Math.floor(new_obj.length/2)]
-			foo[Math.floor(new_obj.length/2)] = new_obj[0]
-			foo[0] = t
-		}
+		foo = shuffle(foo)
 
 		for (var i = 0; i < names.length; i++) {
 				var s = '/users/' + names[i].toString() + '/number'
@@ -65,6 +47,8 @@ $(function() {
 		}
 
 
+		
+
 		 var r = {},
 		    i,
 		    keys = names,
@@ -73,9 +57,10 @@ $(function() {
 		for (i = 0; i < keys.length; i++) {
 		    r[keys[i]] = values[i];
 		}
-		console.log("here")
+
 
 		firebase.database().ref('game/').set(r);
+console.log("here")
 
 		});
 
