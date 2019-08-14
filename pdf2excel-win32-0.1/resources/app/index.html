@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PDF to Excel (Beta)</title>
+    <link rel="stylesheet" href="third_party/bulma.min.css"></link>
+    <link rel="stylesheet" href="third_party/noty.css"></link>
+    <script src="third_party/noty.min.js"></script>
+  </head>
+  <body>
+
+    <section class="hero">
+
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            PDF to Excel 0.1 - choose a name and upload your PDF!
+          </h1>
+
+          <h1 class="title">
+            <div class="control">
+              <input class="input is-primary" id="excel-filename" type="text" placeholder="Choose excel sheet name (e.g. lumpsum)...">
+            </div>
+          </h1>
+
+          <label class="file-label" >
+            <input class="file-input" type="file" accept="application/pdf" id="pdf-input" onchange="fileChanged()">
+            <span class="file-cta">
+              <span class="file-label">
+                Choose a file…
+              </span>
+            </span>
+          </label>
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <script src="parse.js"></script>
+
+  </body>
+</html>

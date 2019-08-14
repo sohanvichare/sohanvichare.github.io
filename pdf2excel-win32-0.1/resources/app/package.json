@@ -1,0 +1,19 @@
+{
+  "name": "actuary_pdf",
+  "version": "1.0.0",
+  "description": "PDF parser for help with actuarial tasks",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Sohan Vichare",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.2",
+    "electron-packager": "^14.0.4",
+    "node-xlsx": "^0.15.0"
+  },
+  "dependencies": {
+    "pdfreader": "^1.0.4"
+  }
+}
