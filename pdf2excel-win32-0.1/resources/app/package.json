@@ -9,7 +9,7 @@
   "author": "Sohan Vichare",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^6.0.2",
+    "electron": "^15.5.5",
     "electron-packager": "^14.0.4",
     "node-xlsx": "^0.15.0"
   },
